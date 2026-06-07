@@ -1,135 +1,135 @@
-# Handwritten Character Recognition Using Machine Learning
+# Handwritten Digit Recognition Using Deep Learning
 
 ## Overview
 
-This project focuses on developing a Handwritten Character Recognition System using Machine Learning techniques. The model is trained on handwritten digit images and can accurately identify and classify handwritten numbers. This project demonstrates the application of Machine Learning and Computer Vision in pattern recognition.
+This project implements a Handwritten Digit Recognition System using a Convolutional Neural Network (CNN). The model is trained on the MNIST dataset and can accurately recognize handwritten digits from 0 to 9.
+
+The project demonstrates the application of Deep Learning and Computer Vision in image classification and pattern recognition.
 
 ---
 
 ## Objective
 
-The main objective of this project is to build an intelligent system that can recognize handwritten digits from images and predict the correct digit with high accuracy.
-
----
-
-## Features
-
-* Image Preprocessing
-* Handwritten Digit Recognition
-* Machine Learning Model Training
-* Model Evaluation
-* Accuracy Analysis
-* Confusion Matrix Visualization
-* Prediction of New Handwritten Digits
-* Model Saving and Reusability
+The primary objective of this project is to build an intelligent system capable of recognizing handwritten digits with high accuracy using Deep Learning techniques.
 
 ---
 
 ## Dataset
 
-The project uses the MNIST Handwritten Digits Dataset.
+The project uses the **MNIST Handwritten Digits Dataset**.
 
-Dataset Information:
+### Dataset Information
 
-* Total Images: 70,000
+* Training Images: 60,000
+* Testing Images: 10,000
 * Image Size: 28 × 28 Pixels
-* Classes: 10 Digits (0–9)
+* Classes: 10 (Digits 0–9)
 
-The dataset contains grayscale images of handwritten digits used for training and testing the model.
+The dataset consists of grayscale images of handwritten digits collected from different individuals.
 
 ---
 
 ## Technologies Used
 
 * Python
+* TensorFlow
+* Keras
 * NumPy
 * Pandas
 * Matplotlib
-* Scikit-Learn
-* OpenCV
-* Joblib
+* Seaborn
 
 ---
 
-## Machine Learning Algorithms
+## Deep Learning Architecture
 
-The following algorithms can be used and compared:
+The model uses a Convolutional Neural Network (CNN) consisting of:
 
-* Logistic Regression
-* Support Vector Machine (SVM)
-* Random Forest Classifier
+### Feature Extraction Layers
 
-The best-performing model is selected based on evaluation metrics.
+* Convolution Layer (32 Filters)
+* Max Pooling Layer
+* Convolution Layer (64 Filters)
+* Max Pooling Layer
+
+### Classification Layers
+
+* Flatten Layer
+* Dense Layer (128 Neurons)
+* Dropout Layer
+* Output Layer (10 Classes)
 
 ---
 
 ## Project Workflow
 
-1. Load Dataset
-2. Data Preprocessing
-3. Image Normalization
-4. Train-Test Split
-5. Model Training
-6. Model Evaluation
-7. Handwritten Digit Prediction
-8. Model Saving
+1. Load MNIST Dataset
+2. Normalize Image Data
+3. Build CNN Architecture
+4. Train the Model
+5. Evaluate Performance
+6. Generate Accuracy and Loss Graphs
+7. Predict Handwritten Digits
+8. Save Trained Model
 
 ---
 
-## Evaluation Metrics
+## Model Performance
 
-The model performance is evaluated using:
+The model achieves high accuracy on the test dataset and successfully recognizes handwritten digits.
 
-* Accuracy
-* Precision
-* Recall
-* F1-Score
-* Confusion Matrix
+Evaluation Metrics:
+
+* Training Accuracy
+* Validation Accuracy
+* Training Loss
+* Validation Loss
 
 ---
 
 ## Generated Outputs
 
-* confusion_matrix.png
-* sample_predictions.png
-* accuracy_graph.png
-* handwritten_model.joblib
+The following files are generated:
+
+* training_performance.png
+* sample_prediction.png
+* handwritten_model.h5
 
 ---
 
 ## Sample Prediction
 
-Input Image: Handwritten Digit
+Input: Handwritten Digit Image
 
-Predicted Output: 7
+Predicted Output: Digit 7
 
-Confidence Score: 98.5%
+Model Confidence: 98%+
 
 ---
 
 ## Applications
 
-* Automatic Form Processing
-* Bank Check Digit Recognition
+* Bank Cheque Processing
 * Postal Code Recognition
-* Educational Applications
-* Digital Document Processing
+* Automated Form Processing
+* Educational Tools
+* Digital Document Analysis
 
 ---
 
 ## Future Enhancements
 
-* Deep Learning using CNNs
-* Real-Time Webcam Recognition
-* Mobile Application Integration
-* Multi-Language Character Recognition
-* Cloud Deployment
+* Real-Time Webcam Digit Recognition
+* Mobile Application Deployment
+* Character and Alphabet Recognition
+* Multi-Language Handwriting Recognition
+* Cloud-Based Prediction System
 
 ---
 
 ## Conclusion
 
-This project successfully demonstrates the use of Machine Learning for handwritten digit recognition. The trained model can accurately identify handwritten numbers and provides a foundation for advanced computer vision applications.
+This project successfully demonstrates the power of Deep Learning in image classification tasks. Using a Convolutional Neural Network, the system can accurately recognize handwritten digits and serves as a foundation for more advanced computer vision applications.
 
 ---
 
